@@ -1,0 +1,52 @@
+<mxfile host="Drawpyo" modified="2026-10-13T15:17:16" agent="Python 3.12, Drawpyo 0.23" version="21.6.5" type="device">
+  <diagram name="Page-1" id="138058871686976">
+    <mxGraphModel dx="2037" dy="830" grid="1" gridSize="10" guides="1" toolTips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="138058871382352" value="User" style="whiteSpace=wrap;rounded=0;fillColor=#232F3E;strokeColor=none;sketch=0;dashed=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=11;fontStyle=0;pointerEvents=1;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.client;" vertex="1" parent="1">
+  <mxGeometry x="20" y="260" width="64" height="64" as="geometry" />
+</mxCell>
+        <mxCell id="138058868627968" value="AWS Cloud" style="whiteSpace=wrap;rounded=0;fillColor=none;strokeColor=#232F3E;dashed=1;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_security_group;verticalAlign=top;align=left;spacingLeft=30;fontColor=#232F3E;" vertex="1" parent="1">
+  <mxGeometry x="160" y="40" width="900" height="560" as="geometry" />
+</mxCell>
+        <mxCell id="138058868761536" value="AI assistant" style="whiteSpace=wrap;rounded=0;fillColor=#01A88D;strokeColor=none;sketch=0;dashed=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=11;fontStyle=0;pointerEvents=1;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.machine_learning;" vertex="1" parent="1">
+  <mxGeometry x="220" y="260" width="64" height="64" as="geometry" />
+</mxCell>
+        <mxCell id="138058868762160" value="Manage access and&#xa;single sign-on" style="whiteSpace=wrap;rounded=0;fillColor=#DD344C;strokeColor=none;sketch=0;dashed=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=11;fontStyle=0;pointerEvents=1;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.identity_and_access_management_iam;" vertex="1" parent="1">
+  <mxGeometry x="220" y="100" width="64" height="64" as="geometry" />
+</mxCell>
+        <mxCell id="138058868763024" value="Data sources" style="whiteSpace=wrap;rounded=0;fillColor=none;strokeColor=#7AA116;dashed=1;html=1;dashPattern=8 4;verticalAlign=top;align=center;fontColor=#7AA116;fontSize=11;" vertex="1" parent="1">
+  <mxGeometry x="460" y="140" width="520" height="340" as="geometry" />
+</mxCell>
+        <mxCell id="138058868763888" value="Document&#xa;bucket (S3)" style="whiteSpace=wrap;rounded=0;fillColor=#7AA116;strokeColor=none;sketch=0;dashed=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=11;fontStyle=0;pointerEvents=1;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.bucket;" vertex="1" parent="1">
+  <mxGeometry x="500" y="300" width="64" height="64" as="geometry" />
+</mxCell>
+        <mxCell id="138058868764560" value="FSx: complex&#xa;machinery &amp; process&#xa;documentation" style="whiteSpace=wrap;rounded=1;fillColor=#FFF2CC;strokeColor=#D6B656;dashed=0;html=1;fontSize=10;fontColor=#7F6000;align=center;" vertex="1" parent="1">
+  <mxGeometry x="660" y="290" width="110" height="64" as="geometry" />
+</mxCell>
+        <mxCell id="138058868765424" value="Third-party enterprise&#xa;apps / document&#xa;repositories connector" style="whiteSpace=wrap;rounded=1;fillColor=#FFF2CC;strokeColor=#D6B656;dashed=0;html=1;fontSize=10;fontColor=#7F6000;align=center;" vertex="1" parent="1">
+  <mxGeometry x="840" y="290" width="110" height="64" as="geometry" />
+</mxCell>
+        <mxCell id="138058868765952" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;rounded=0;jettySize=auto;startArrow=block;endArrow=block;startFill=0;endFill=0;strokeColor=#545B64;" edge="1" parent="1" source="138058871382352" target="138058868761536" value="Query">
+  <mxGeometry relative="1" as="geometry" />
+</mxCell>
+        <mxCell id="138058870837216" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;rounded=0;jettySize=auto;startArrow=none;endArrow=block;endFill=0;strokeColor=#545B64;" edge="1" parent="1" source="138058868761536" target="138058868762160" value="Get user &amp; group info">
+  <mxGeometry relative="1" as="geometry" />
+</mxCell>
+        <mxCell id="138058868764080" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;rounded=0;jettySize=auto;startArrow=none;endArrow=block;endFill=0;strokeColor=#545B64;" edge="1" parent="1" source="138058868762160" target="138058868761536" value="Permissions">
+  <mxGeometry relative="1" as="geometry" />
+</mxCell>
+        <mxCell id="138058868766480" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;rounded=0;jettySize=auto;startArrow=block;endArrow=block;startFill=0;endFill=0;strokeColor=#545B64;" edge="1" parent="1" source="138058868761536" target="138058868763888" value="Ingest / search">
+  <mxGeometry relative="1" as="geometry" />
+</mxCell>
+        <mxCell id="138058868766624" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;rounded=0;jettySize=auto;startArrow=block;endArrow=block;startFill=0;endFill=0;strokeColor=#545B64;" edge="1" parent="1" source="138058868761536" target="138058868764560" value="Ingest / search">
+  <mxGeometry relative="1" as="geometry" />
+</mxCell>
+        <mxCell id="138058868766768" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;rounded=0;jettySize=auto;startArrow=block;endArrow=block;startFill=0;endFill=0;strokeColor=#545B64;" edge="1" parent="1" source="138058868761536" target="138058868765424" value="Ingest / search">
+  <mxGeometry relative="1" as="geometry" />
+</mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
